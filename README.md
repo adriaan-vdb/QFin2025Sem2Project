@@ -1,5 +1,13 @@
 # **2025 QFin Sem 2 Project**
 
+## When ur using mac:
+# conda create -n "qfin_env" python=3.12.11
+# conda activate qfin_env   
+# python -m pip install -r requirements.txt
+# python --version (Verify its Python 3.12.11)
+# python play_game.py 
+# https://github.com/jfry03/TTProjectSem2
+
 ## **Introduction**
 
 In this project, your team is tasked with creating a trading bot that will run in a simulated market environment alongside some NPC bots in a turn-based fashion (i.e., all bots in the environment, including yours, are called in a cycle to interact with the market). In the first round, there will only be one market for a product called "UEC". In future rounds, there may be more products.
@@ -185,3 +193,4 @@ I do not like variance. As such, when assessing the bots I will run them many ti
 - **Preliminary Submission**: The same thing, but the pool size is 200 points
 
 
+# QFin2025Sem2Project
