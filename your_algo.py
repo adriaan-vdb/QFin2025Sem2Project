@@ -19,7 +19,8 @@ class PlayerAlgorithm:
         self.products = products        # A list of all tradeable products in the current round
         self.name = "PlayerAlgorithm"   # The name representing your bot in the trade logs  
         self.timestamp_num = 0          # Counter to track the number of timestamps completed
-
+        self.bids = []
+        self.asks = []
         # Initialize any other global variables you may need here
         # Examples: position tracking, risk management parameters, strategy state variables
 
@@ -69,6 +70,27 @@ class PlayerAlgorithm:
         if self.timestamp_num == 0:
             # Place a buy order for 5 units of UEC at price 1005
             messages.append(self.create_order("UEC", 5, 1005, "Buy"))
+
+
+
+        if book["UEC"]["Bids"]:
+            self.bids.append(book["UEC"]["Bids"][0].price)
+        else:
+            self.bids.append(None)
+
+        if book["UEC"]["Asks"]:
+            self.asks.append(book["UEC"]["Asks"][0].price)
+        else:
+            self.asks.append(None)
+
+        
+
+        
+
+            
+
+
+        
         
         self.timestamp_num += 1
         return messages

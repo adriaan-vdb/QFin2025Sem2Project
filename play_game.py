@@ -33,6 +33,7 @@ sys.path = original_sys_path
 #   (e.g. you may set fine to 0 to see if your strategy is first profiable without position penalties)
 
 from your_algo import PlayerAlgorithm
+import pandas as pd
 
 uec = Product("UEC", mpv=0.1, pos_limit=200, fine=20)
 
@@ -44,7 +45,9 @@ your_pnl = run_game(player_bot, num_timestamps, products)
 
 print(your_pnl)
 
+bids = player_bot.bids
+asks = player_bot.asks
 
-
+pd.DataFrame({"Bids": bids, "Asks": asks}).to_csv("prices.csv")
 
 
