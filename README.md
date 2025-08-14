@@ -1,12 +1,12 @@
 # **2025 QFin Sem 2 Project**
 
-## When ur using mac:
-# conda create -n "qfin_env" python=3.12.11
-# conda activate qfin_env   
-# python -m pip install -r requirements.txt
-# python --version (Verify its Python 3.12.11)
-# python play_game.py 
-# https://github.com/jfry03/TTProjectSem2
+### When ur using mac:
+- conda create -n "qfin_env" python=3.12.11
+- conda activate qfin_env   
+- python -m pip install -r requirements.txt
+- python --version (Verify its Python 3.12.11)
+- python play_game.py 
+- https://github.com/jfry03/TTProjectSem2
 
 ## **Introduction**
 
